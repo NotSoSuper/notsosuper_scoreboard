@@ -30,10 +30,12 @@ include("scoreboard/scoreboard.lua")
 local pScoreBoard = nil
 local time
 local __SBind = {} --fuck
-ScoreBoardDesc = "Nuclear DarkRP|NuclearGaming.org|!"
+ScoreBoardDesc = "change me"
 
+--inb4 api goes down... ITS DOWN
 local function LoadLocationData(ent, ip)
-	http.Fetch("http://freegeoip.net/xml/" .. (ent == LocalPlayer() and "" or ip), function(contents)
+--	http.Fetch("http://freegeoip.net/xml/" .. (ent == LocalPlayer() and "" or ip), function(contents)
+    http.Fetch("http://freegeoip.lwan.ws/xml/" .. (ent == LocalPlayer() and "" or ip), function(contents)
 		local code = contents:match("<CountryCode>(..)</CountryCode>")
 		local country = contents:match("<CountryName>(.+)</CountryName>")
         local state = contents:match("<RegionName>(.+)</RegionName>")
