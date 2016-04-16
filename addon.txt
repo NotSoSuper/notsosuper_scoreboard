@@ -1,0 +1,11 @@
+"AddonInfo"
+{
+	"name"				"Scoreboard"
+	"version"			"1.0"
+	"up_date"			""
+	"author_name"			"NotSoSuper"
+	"author_email"			""
+	"author_url"			""
+	"info"				"1239 Lines"
+	"override"			"0"
+}
